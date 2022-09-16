@@ -1,0 +1,39 @@
+.sidebar {
+  margin-bottom: 40px;
+  background-color: black;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 38px 0;
+  
+}
+.navigation {
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Megrim', cursive;
+  }
+}
+ul {
+  display: flex;
+}
+.btn-nav {
+  background-color: black;
+  margin: 0 20px;
+  padding: 10px;
+  
+}
+.link-active {
+  border-bottom: 2px solid #dfa1b0;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  padding: 5px;
+}
+.link {
+  padding: 7px;
+}

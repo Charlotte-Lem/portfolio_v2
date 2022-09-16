@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,10 +7,9 @@
 
 body {
   margin: 0 auto;
-  max-width: 1200px;
-  font-family: $font-p;
-  color: $light;
-  background: $black;
+  max-width: 1040px;
+  font-family: $font-one;
+  
 }
 
 button {
@@ -20,5 +20,4 @@ li {
 }
 a {
   text-decoration: none;
-  color: $dark;
 }

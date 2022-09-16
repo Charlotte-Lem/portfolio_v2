@@ -10,7 +10,7 @@ export default function Navigation() {
             <button className="btn-nav">
               <NavLink
                 exact="true"
-                to="/"
+                to="/accueil"
                 className={({ isActive }) =>
                   isActive ? 'link-active' : 'link'
                 }

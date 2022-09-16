@@ -1,0 +1,33 @@
+.home {
+  display: flex;
+
+  &__content {
+    margin: 0 250px 0 0;
+    font-weight: 700;
+    h1 {
+      background: $color-primary;
+      margin: 50px;
+      padding: 25px;
+    }
+    p {
+      
+      font-size: 25px;
+      background: $color-ter;
+      margin: 50px;
+      padding: 25px;
+    }
+    img {
+      background: $color-sec;
+      margin: 50px;
+      padding: 25px;
+    }
+  }
+  &__bio {
+    font-weight: 700;
+    font-size: 23px;
+    background: $color-ter;
+    margin: 50px;
+    padding: 35px;
+  }
+}
+
