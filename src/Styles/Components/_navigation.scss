@@ -1,34 +1,52 @@
 .sidebar {
-  margin-bottom: 40px;
-  background-color: black;
-  border: transparent;
+  // background-color: black;
+  // border: transparent;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding: 38px 0;
-  
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.938);
+  .logo {
+    width: 200px;
+    display: flex;
+  }
+  .C,
+  .L {
+    color: white;
+    font-size: 60px;
+  }
 }
 .navigation {
-  
   a {
     text-decoration: none;
     color: white;
     font-size: 30px;
-    font-weight: 700;
-    font-family: 'Megrim', cursive;
+    font-weight: 600;
+    font-family: $font-one;
   }
 }
 ul {
+  @media #{$medium-screen} {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .btn-nav {
-  background-color: black;
+  //background-color: black;
   margin: 0 20px;
   padding: 10px;
-  
+  background-color: transparent;
+  border: none;
 }
 .link-active {
-  border-bottom: 2px solid #dfa1b0;
+  border-bottom: 2px solid $color-ter;
   border-left: transparent;
   border-right: transparent;
   border-top: transparent;

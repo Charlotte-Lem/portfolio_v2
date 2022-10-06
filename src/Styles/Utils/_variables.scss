@@ -1,5 +1,14 @@
-$color-primary: #edd1f2;
-$color-sec: #e4eeec;
-$color-ter: #dfa1b0;
+//@root color
+$color-primary: #a6e1e9;
+$color-sec: #b9ffff;
+$color-ter: #149180;
 
+//@root font
 $font-one: 'Megrim', cursive;
+$font-two: 'Special Elite', cursive;
+$font-three: 'Courier New', Courier, monospace ;
+
+//media-queries
+$small-screen: "screen and (max-width: 768px)";
+$medium-screen: "screen and (max-width: 992px)";
+$large-screen: "screen and (min-width: 1440px)";

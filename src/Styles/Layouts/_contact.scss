@@ -1,0 +1,100 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand 0.8s ease forwards;
+  background-color: $color-ter;
+  position: relative;
+  font-family: $font-two;
+  transition: all 0.8s ease;
+}
+
+.container_content {
+  width: 50%;
+}
+
+.container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 30%;
+  overflow: hidden;
+}
+
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+  font: 25px $font-two;
+  color: $color-primary;
+  h1 {
+    font-size: 50px;
+  }
+  a {
+    color: $color-primary;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .react-icons {
+    vertical-align: sub;
+    font-size: 30px;
+  }
+
+  h1:hover {
+    color: $color-primary !important;
+  }
+  :hover {
+    color: black;
+  }
+}
+
+.content-p {
+  li {
+    padding-right: 20px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 80px;
+  transform: translateY(300px);
+  animation: slideUp 0.8s ease-in-out forwards 0.8s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}

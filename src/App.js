@@ -13,6 +13,7 @@ function App() {
         <Navigation />{' '}
         <Routes>
           <Route exact path="/accueil" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/competences" element={<Skills />} />
           <Route exact path="/projet" element={<Project />} />

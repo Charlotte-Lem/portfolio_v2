@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,12 +8,9 @@
 }
 
 body {
-  margin: 0 auto;
-  max-width: 1040px;
   font-family: $font-one;
-  
+  // background-color: rgba(0, 0, 0, 0.938);
 }
-
 button {
   cursor: pointer;
 }

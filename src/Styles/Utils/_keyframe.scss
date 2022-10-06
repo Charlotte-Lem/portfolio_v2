@@ -1,0 +1,134 @@
+@keyframes type {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.05em solid white;
+    opacity: 1;
+  }
+  100% {
+    border: none;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.05em solid white;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.05em solid white;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.05em solid white;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

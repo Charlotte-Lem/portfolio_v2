@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import logo from './../Assets/logo.png';
 export default function Navigation() {
   return (
     <div className="sidebar">
       <div className="navigation">
         <ul>
+         
           <li>
             <button className="btn-nav">
               <NavLink
@@ -15,10 +16,11 @@ export default function Navigation() {
                   isActive ? 'link-active' : 'link'
                 }
               >
-                <span>Accueil</span>
+                <span>A propos de moi</span>
               </NavLink>
             </button>
           </li>
+
           <li>
             <button className="btn-nav">
               <NavLink
