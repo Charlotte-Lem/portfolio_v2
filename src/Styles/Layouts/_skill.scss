@@ -8,6 +8,7 @@
   background: $color-ter;
   justify-content: center;
   align-content: center;
+  height: 96vh;
   @media #{$medium-screen} {
     display: flex;
     flex-direction: column;

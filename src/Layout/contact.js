@@ -14,7 +14,7 @@ export default function contact() {
               <h1>Pour me contacter :</h1>
             </div>
             <div className="par">
-              <p className='content-p'>
+              <section className='content-p'>
                 <IconContext.Provider value={{ className: 'react-icons' }}>
                   <a className="info__mail" href="mailto:">
                     <GrMail></GrMail> lemoine.charlotte@gmail.com
@@ -42,7 +42,7 @@ export default function contact() {
                     </li>
                   </ul>
                 </IconContext.Provider>
-              </p>
+              </section>
             </div>
           </div>
         </div>
