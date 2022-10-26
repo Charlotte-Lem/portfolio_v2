@@ -33,10 +33,8 @@ export default function project() {
                     src={p3}
                     alt="logo ohmyfood"
                   />
-                  <p>
-                    Site pour application de restaurants et de plats. HTML, CSS,
-                    SASS
-                  </p>
+                  <p>Site pour application de restaurants et de plats. </p>
+                  <p>Technos: HTML, CSS, SASS</p>
                 </div>
               </a>
             </div>
