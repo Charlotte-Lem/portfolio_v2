@@ -1,8 +1,8 @@
-import React from 'react';
-import p2 from '../Assets/logo/p2/Booki.png';
-import p3 from '../Assets/logo/p3/ohmyfood@2x.svg';
-import p5 from '../Assets/logo/p5/kanap-logo.png';
-import p7 from '../Assets/logo/p7/groupomania-logo.svg';
+import React from "react";
+import p2 from "../Assets/logo/p2/Booki.png";
+import p3 from "../Assets/logo/p3/ohmyfood@2x.svg";
+import p5 from "../Assets/logo/p5/kanap-logo.png";
+import p7 from "../Assets/logo/p7/groupomania-logo.svg";
 export default function project() {
   return (
     <>
@@ -10,11 +10,11 @@ export default function project() {
         {/* card des projets en cour et réalisés */}
         <div className="content">
           <div className="title">
-            <h2>Projets réalisés</h2>{' '}
+            <h2>Projets réalisés</h2>{" "}
           </div>
           <div className="project">
             <div className="project__card">
-              <a href="">
+              <a href="/#">
                 <div className="project__content">
                   <img
                     className="project__content logo booki"
@@ -41,7 +41,7 @@ export default function project() {
               </a>
             </div>
             <div className="project__card">
-              <a href="">
+              <a href="/#">
                 <div className="project__content">
                   <img
                     className="project__content  logo"
@@ -53,7 +53,7 @@ export default function project() {
               </a>
             </div>
             <div className="project__card">
-              <a href="">
+              <a href="/#">
                 <div className="project__content">
                   <img
                     className="project__content  logo"

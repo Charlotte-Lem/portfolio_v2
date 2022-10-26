@@ -1,9 +1,9 @@
-import React from 'react';
-import { IconContext } from 'react-icons';
-import { FaFacebook, FaLinkedin, FaGithub, FaDiscord } from 'react-icons/fa';
-import { GrMail } from 'react-icons/gr';
-import { BsFillPhoneFill } from 'react-icons/bs';
-import profile from './../Assets/profile_picture.webp';
+import React from "react";
+import { IconContext } from "react-icons";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
+import { BsFillPhoneFill } from "react-icons/bs";
+import profile from "./../Assets/profile_picture.webp";
 export default function contact() {
   return (
     <>
@@ -14,8 +14,8 @@ export default function contact() {
               <h1>Pour me contacter :</h1>
             </div>
             <div className="par">
-              <section className='content-p'>
-                <IconContext.Provider value={{ className: 'react-icons' }}>
+              <section className="content-p">
+                <IconContext.Provider value={{ className: "react-icons" }}>
                   <a className="info__mail" href="mailto:">
                     <GrMail></GrMail> lemoine.charlotte@gmail.com
                   </a>
@@ -28,7 +28,7 @@ export default function contact() {
                     <li className="Facebook">
                       <a href="https://www.facebook.com/Charlotte.Lemoine0">
                         <FaFacebook></FaFacebook> Facebook
-                      </a>{' '}
+                      </a>{" "}
                     </li>
                     <li className="Linkedin">
                       <a href="https://www.linkedin.com/in/charlotte-lem/">
@@ -48,7 +48,7 @@ export default function contact() {
         </div>
         <div className="container_outer_img">
           <div className="img-inner">
-            <img className="container_img" src={profile}  />
+            <img className="container_img" src={profile} alt="moi" />
           </div>
         </div>
       </div>

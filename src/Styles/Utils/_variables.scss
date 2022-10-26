@@ -4,11 +4,11 @@ $color-sec: #b9ffff;
 $color-ter: #149180;
 
 //@root font
-$font-one: 'Megrim', cursive;
-$font-two: 'Special Elite', cursive;
-$font-three: 'Courier New', Courier, monospace ;
+$font-one: "Megrim", cursive;
+$font-two: "Special Elite", cursive;
+$font-three: "Courier New", Courier, monospace;
 
 //media-queries
 $small-screen: "screen and (max-width: 768px)";
-$medium-screen: "screen and (max-width: 992px)";
+$medium-screen: "screen and (max-width: 1100px)";
 $large-screen: "screen and (min-width: 1440px)";

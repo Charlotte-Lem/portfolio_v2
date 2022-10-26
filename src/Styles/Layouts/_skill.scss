@@ -20,6 +20,7 @@
   &__teck {
     flex-basis: 40%;
     text-align: center;
+    padding-bottom: 20px;
   }
   &__soft {
     flex-basis: 50%;
@@ -28,6 +29,10 @@
     width: 80px;
     height: auto;
     margin: 50px;
+    @media #{$medium-screen} {
+      margin: 10px;
+      width: 60px;
+    }
   }
   p {
     text-align: center;
@@ -36,6 +41,9 @@
     letter-spacing: 5px;
     line-height: 180%;
     font-size: 24px;
+    @media #{$medium-screen} {
+      font-size: 18px;
+    }
   }
   // .base{
   //   //justify-content: center;

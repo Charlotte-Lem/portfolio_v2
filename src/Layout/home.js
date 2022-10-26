@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function home() {
   return (
@@ -6,13 +6,13 @@ export default function home() {
       <div className="home">
         <div className="css-typing">
           <p> Charlotte Lemoine</p>
-          <p>Développeuse Web </p>{' '}
+          <p>Développeuse Web </p>{" "}
           <a
             className="cv
           "
             href="./CV_LEMOINE_CHARLOTTE.pdf"
           >
-        Mon CV (pdf)
+            <span className="cv__title">Mon CV (pdf)</span>
           </a>
         </div>
       </div>

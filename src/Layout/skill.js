@@ -8,7 +8,7 @@ import reactJs from '../Assets/reactjs.png';
 import mongo from '../Assets/mongo.png';
 import git from '../Assets/github.png';
 import seq from '../Assets/seq.png';
-import all from '../Assets/all.png';
+//import all from '../Assets/all.png';
 
 export default function skill() {
   return (
