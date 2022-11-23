@@ -7,7 +7,7 @@ import profile from "./../Assets/profile_picture.webp";
 export default function contact() {
   return (
     <>
-      <div className="container">
+      <div className="container" id="Contact">
         <div className="container_content">
           <div className="container_content_inner">
             <div className="title">
@@ -52,7 +52,6 @@ export default function contact() {
           </div>
         </div>
       </div>
-      <div className="overlay"></div>
     </>
 
     // <div className="info container_outer_img">

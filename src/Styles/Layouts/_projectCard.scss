@@ -1,54 +1,25 @@
 .container__project {
   display: flex;
-  min-height: 110vh;
   justify-content: space-around;
-  // align-items: center;
   color: #fff;
-animation: expand 2s ease forwards;
   background-color: black;
   position: relative;
   font-family: $font-two;
   transition: all 0.8s ease;
-}
-.overlay__project {
-  //probeme fond bleu en entier
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  // height: 210vh;
-  z-index: -10;
-  background-color: $color-ter;
+  padding: 15px 0;
 }
 
 .content {
-   opacity: 0;
-   animation: appear 2s ease forwards;
-   animation-delay: 2s;
-}
-@keyframes expand {
-  0% {
-    transform: translateX(1400px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+  opacity: 0;
+  animation: appear 2s ease forwards;
+  animation-delay: 2s;
 }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .project {
   font-family: $font-two;
   display: flex;
   flex-direction: row;
-  //margin: 0 25px;
+  margin: 0 25px;
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
@@ -56,32 +27,28 @@ animation: expand 2s ease forwards;
   span {
     font-size: 24px;
   }
-  h3 {
-    color: $color-primary;
-    padding: 20px;
-    font-size: 30px;
-  }
+
   p {
     font-size: 22px;
-    color: $color-ter;
+    color: white;
     display: flex;
     align-content: center;
     align-items: center;
     padding: 10px;
   }
   &__card {
-    width: 300px;
-    height: 400px;
-    //flex-basis: 20%;
-    border: 1px solid $color-primary;
-    border-radius: 11px;
+    min-width: 200px;
+    max-width: 600px;
+    max-height: 500px;
+    border: 1px solid #373738;
+    border-radius: 5px;
     margin: 30px;
     padding: 7px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: flex-end;
   }
   &__content {
     width: 100%;
@@ -93,10 +60,9 @@ animation: expand 2s ease forwards;
     // .booki-logo{
     //  font-size: 20px;
     // }
-    
+
     .logo {
-      width: 90%;
-      //height: 20px;
+      width: 70%;
       object-fit: cover;
     }
     .booki {
@@ -106,12 +72,12 @@ animation: expand 2s ease forwards;
 }
 .title {
   h2 {
+    text-transform: uppercase;
     font-family: $font-three;
-    color: $color-sec;
+    color: white;
     padding: 20px;
     font-size: 30px;
     text-align: center;
     margin: 50px;
-    font-style: italic;
   }
 }

@@ -6,7 +6,7 @@ import p7 from "../Assets/logo/p7/groupomania-logo.svg";
 export default function project() {
   return (
     <>
-      <div className="container__project">
+      <div className="container__project" id="Project">
         {/* card des projets en cour et réalisés */}
         <div className="content">
           <div className="title">
@@ -70,7 +70,6 @@ export default function project() {
           </div>
         </div>
       </div>
-      <div className="overlay__project"></div>
     </>
   );
 }

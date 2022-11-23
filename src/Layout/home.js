@@ -3,10 +3,11 @@ import React from "react";
 export default function home() {
   return (
     <>
-      <div className="home">
+      <div className="home" id="Home">
         <div className="css-typing">
           <p> Charlotte Lemoine</p>
           <p>Développeuse Web </p>{" "}
+        </div>
           <a
             className="cv
           "
@@ -14,10 +15,8 @@ export default function home() {
           >
             <span className="cv__title">Mon CV (pdf)</span>
           </a>
-        </div>
       </div>
 
-      <div className="home__overlay"></div>
     </>
   );
 }

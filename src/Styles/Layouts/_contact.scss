@@ -1,77 +1,67 @@
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  z-index: -10;
-  background-color: black;
-}
-
 .container {
-  display: flex;
-  height: 100vh;
-  justify-content: space-around;
-  align-items: center;
-  color: #fff;
-  animation: expand 0.8s ease forwards;
-  background-color: $color-ter;
+  color: black;
+  background-color: white;
   position: relative;
   font-family: $font-two;
   transition: all 0.8s ease;
+  padding: 70px 0;
   @media #{$medium-screen} {
     flex-direction: column-reverse;
-    height: 75vh;
+  }
+  h1 {
+    font-size: 55px;
+    @media #{$medium-screen} {
+      font-size: 25px;
+      text-align: center;
+      padding-bottom: 30px;
+    }
   }
 }
 
 .container_content {
-  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media #{$medium-screen} {
-    width: 100%;
+    // width: 100%;
   }
 }
 
 .container_content_inner {
-  width: 80%;
-  margin-left: 80px;
   @media #{$medium-screen} {
-    width: 100%;
+    // width: 100%;
     margin: 10px;
   }
 }
 
 .container_outer_img {
-  width: 30%;
+  text-align: center;
   overflow: hidden;
   @media #{$medium-screen} {
-    width: 50%;
+    // width: 50%;
   }
 }
 
 .container_img {
-  width: 50%;
-  animation: slideIn 1.5s ease-in-out forwards;
+  width: 10%;
+  // animation: slideIn 1.5s ease-in-out forwards;
   @media #{$medium-screen} {
-    width: 100%;
+    width: 50%;
   }
 }
 
 .par {
   @media #{$medium-screen } {
     font-size: 18px;
-    line-height: 40px;
+    line-height: 30px;
   }
-  height: auto;
-  overflow: hidden;
   font: 25px $font-two;
-  color: $color-primary;
+  color: black;
   h1 {
     font-size: 50px;
   }
   a {
-    color: $color-primary;
+    color: black;
   }
 
   &__social {
@@ -83,27 +73,19 @@
 
   .react-icons {
     vertical-align: sub;
-    font-size: 30px;
-  }
-
-  h1:hover {
-    color: $color-primary !important;
-  }
-  :hover {
-    color: black;
+    font-size: 26px;
   }
 }
 
 .content-p {
-  li {
-    padding-right: 20px;
-  }
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   line-height: 80px;
-  transform: translateY(300px);
-  animation: slideUp 0.8s ease-in-out forwards 0.8s;
+  transition: all 0.3s ease-in-out;
+  :hover {
+    color: rgb(81, 188, 221);
+  }
   @media #{$medium-screen } {
     line-height: 60px;
     flex-direction: column;
@@ -112,19 +94,14 @@
   }
 }
 
-.title {
-  overflow: hidden;
-  height: auto;
-}
-
-h1 {
-  font-size: 40px;
-  color: white;
-  margin-bottom: 20px;
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-  @media #{$medium-screen} {
-    font-size: 20px;
-    text-align: center;
-  }
-}
+// h1 {
+//   font-size: 40px;
+//   color: white;
+//   margin-bottom: 20px;
+//   transform: translateY(100px);
+//   animation: slideUp 0.8s ease forwards 0.5s;
+//   @media #{$medium-screen} {
+//     font-size: 20px;
+//     text-align: center;
+//   }
+// }
