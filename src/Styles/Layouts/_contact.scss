@@ -61,6 +61,11 @@
     font-size: 50px;
   }
   a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
     color: black;
   }
 
@@ -93,4 +98,3 @@
     align-items: center;
   }
 }
-

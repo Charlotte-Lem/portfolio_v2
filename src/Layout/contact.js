@@ -17,12 +17,12 @@ export default function contact() {
               <section className="content-p">
                 <IconContext.Provider value={{ className: "react-icons" }}>
                   <a className="info__mail" href="mailto:">
-                    <GrMail></GrMail> lemoine.charlotte@gmail.com
+                    <GrMail></GrMail> lemoine.charlottepro@icloud.com
                   </a>
-                  <a className="info__phone" href="tel:+">
+                  {/* <a className="info__phone" href="tel:+">
                     <BsFillPhoneFill></BsFillPhoneFill>
                     <span className="phone"> 0778218944</span>
-                  </a>
+                  </a>  */}
 
                   <ul className="info__social">
                     <li className="Facebook">

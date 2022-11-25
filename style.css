@@ -477,6 +477,11 @@ a {
   .par h1 {
     font-size: 50px; }
   .par a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
     color: black; }
   .par__social {
     display: flex;
