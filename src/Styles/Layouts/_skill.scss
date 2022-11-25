@@ -23,7 +23,6 @@
     margin: 50px;
     @media #{$medium-screen} {
       margin: 30px;
-      // width: 60px;
     }
   }
   p {
@@ -39,9 +38,6 @@
       font-size: 20px;
     }
   }
-  // .base{
-  //   //justify-content: center;
-  // }
   .skills {
     @media #{$medium-screen} {
       display: flex;

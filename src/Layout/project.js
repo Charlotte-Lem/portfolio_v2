@@ -7,12 +7,13 @@ export default function project() {
   return (
     <>
       <div className="container__project" id="Project">
-        {/* card des projets en cour et réalisés */}
+        {/* Toutes les cards des projets en cour et réalisés */}
         <div className="content">
           <div className="title">
             <h2>Projets réalisés</h2>{" "}
           </div>
           <div className="project">
+            {/* card d'un projet */}
             <div className="project__card">
               <a href="/#">
                 <div className="project__content">
@@ -25,6 +26,8 @@ export default function project() {
                 </div>
               </a>
             </div>
+            {/* Fin card d'un projet */}
+            {/* card d'un projet */}
             <div className="project__card">
               <a href="https://charlotte-lem.github.io/CharlotteLemoine_3_05112021/">
                 <div className="project__content">
@@ -40,6 +43,8 @@ export default function project() {
                 </div>
               </a>
             </div>
+            {/* Fin card d'un projet */}
+            {/* card d'un projet */}
             <div className="project__card">
               <a href="/#">
                 <div className="project__content">
@@ -52,6 +57,8 @@ export default function project() {
                 </div>
               </a>
             </div>
+            {/* Fin card d'un projet */}
+            {/* card d'un projet */}
             <div className="project__card">
               <a href="/#">
                 <div className="project__content">
@@ -67,8 +74,10 @@ export default function project() {
                 </p>
               </a>
             </div>
+            {/* Fin card d'un projet */}
           </div>
         </div>
+        {/* Fin des cards  */}
       </div>
     </>
   );

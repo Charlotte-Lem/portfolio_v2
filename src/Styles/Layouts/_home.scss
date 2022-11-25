@@ -5,6 +5,10 @@
   // position: relative;
   font-family: $font-two;
   transition: all 0.8s ease;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .css-typing {
@@ -25,8 +29,8 @@
     width: 9.4em;
     font-size: 20px;
   }
-  width: 10.4em;
-  font-size: 50px;
+  width: 9.4em;
+  font-size: 30px;
   opacity: 0;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -41,7 +45,7 @@
     width: 9.4em;
     font-size: 20px;
   }
-  font-size: 40px;
+  font-size: 30px;
   width: 9.7em;
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end);
@@ -59,7 +63,6 @@
   font-family: $font-two;
   font-size: 40px;
   color: #ffffff;
-  // display: flex;
   opacity: 0;
   -webkit-animation: appear 1s ease forwards;
   animation: appear 1s ease forwards;

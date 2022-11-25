@@ -3,6 +3,7 @@ import React from "react";
 export default function home() {
   return (
     <>
+    {/* header */}
       <div className="home" id="Home">
         <div className="css-typing">
           <p> Charlotte Lemoine</p>
@@ -16,7 +17,7 @@ export default function home() {
             <span className="cv__title">Mon CV (pdf)</span>
           </a>
       </div>
-
+{/* fin du header */}
     </>
   );
 }
