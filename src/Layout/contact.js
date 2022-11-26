@@ -11,7 +11,7 @@ export default function contact() {
         <div className="container_content">
           <div className="container_content_inner">
             <div className="title">
-              <h1>Pour me contacter :</h1>
+              <h1>Contact:</h1>
             </div>
             <div className="par">
               <section className="content-p">
@@ -46,11 +46,11 @@ export default function contact() {
             </div>
           </div>
         </div>
-        <div className="container_outer_img">
+        {/* <div className="container_outer_img">
           <div className="img-inner">
             <img className="container_img" src={profile} alt="moi" />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
 

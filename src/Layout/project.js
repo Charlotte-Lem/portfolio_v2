@@ -3,12 +3,14 @@ import p2 from "../Assets/logo/p2/Booki.png";
 import p3 from "../Assets/logo/p3/ohmyfood@2x.svg";
 import p5 from "../Assets/logo/p5/kanap-logo.png";
 import p7 from "../Assets/logo/p7/groupomania-logo.svg";
+import Card from "../Components/card.js";
 export default function project() {
   return (
     <>
       <div className="container__project" id="Project">
         {/* Toutes les cards des projets en cour et réalisés */}
         <div className="content">
+        {/* <Card/> */}
           <div className="title">
             <h2>Projets réalisés</h2>{" "}
           </div>

@@ -1,23 +1,16 @@
 import React from "react";
+import FirstName from "../Components/Animation/FirstName.js";
 
-export default function home() {
+
+function Home() {
   return (
     <>
-    {/* header */}
       <div className="home" id="Home">
-        <div className="css-typing">
-          <p> Charlotte Lemoine</p>
-          <p>Développeuse Web </p>{" "}
-        </div>
-          <a
-            className="cv
-          "
-            href="./CV_LEMOINE_CHARLOTTE.pdf"
-          >
-            <span className="cv__title">Mon CV (pdf)</span>
-          </a>
+        <FirstName />
       </div>
-{/* fin du header */}
     </>
   );
 }
+
+export default Home;
+

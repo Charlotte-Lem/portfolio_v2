@@ -5,7 +5,7 @@
   align-items: center;
   font-size: 25px;
   padding: 1rem 2rem;
-
+background-color: white;
   position: fixed;
   z-index: 2;
   border-bottom: 1px solid white;
@@ -13,7 +13,7 @@
 }
 
 .navbar-float {
-  background-color: rgb(8, 8, 8);
+  background-color: white;
   box-shadow: 0 0px 20px rgba(252, 249, 249, 0.2);
 }
 
@@ -35,7 +35,7 @@
     cursor: pointer;
 
     a {
-      color: white;
+      color: black;
       margin: 5px 0;
       text-decoration: none;
       text-transform: uppercase;
@@ -82,9 +82,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(2, 2, 2);
+  background-color: white;
   svg {
-    color: white;
+    color: black;
     width: 70%;
     height: 70%;
   }
@@ -102,17 +102,18 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    background: black;
+    background: white;
+    
     background-size: cover;
     background-repeat: repeat;
     // box-shadow: 0px 0px 20px rgba(161, 153, 153, 0.15);
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(224, 221, 221);
 
     svg {
       width: 35px;
       height: 35px;
       font-size: 50px;
-      color: white;
+      color: black;
       margin: 0.1rem 1rem;
     }
 
@@ -120,7 +121,7 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      color: white;
+      color: black;
       font-size: 1.5rem;
       width: 100%;
       height: 100%;
@@ -133,14 +134,14 @@
         margin: 1.1rem;
 
         a {
-          color: white;
+          color: black;;
           text-transform: uppercase;
           font-weight: 700;
           text-decoration: none;
           transition: all 0.3s ease-in-out;
 
           &:hover {
-            color: rgb(58, 130, 151);
+            color: rgb(18, 87, 108);
           }
         }
       }

@@ -1,60 +1,100 @@
 .home {
-  padding: 5.5rem 0;
+  padding: 5.5rem 0 3rem 0 ;
   color: #fff;
-  background-color: black;
+  background-color: rgb(73, 162, 170);
   // position: relative;
-  font-family: $font-two;
-  transition: all 0.8s ease;
+  // font-family: $font-two;
+  // transition: all 0.8s ease;
+  // display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   flex-direction: column;
+}
+.title {
+  // font-size: 80px;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 50xp;
+  font-weight: bold;
+  margin: 0;
+  // font-family: $font-two;
+}
+.title-firstname {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-weight: bold;
+  margin: 0 0 25px 0;
+  // font-family: $font-two;
+}
+.subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-weight: 700;
+  font-size: 40px;
 }
 
-.css-typing {
-  margin: 60px;
+.letter {
+  font-size: 3rem;
+  display: inline-block;
 }
-.css-typing p {
-  padding: 20px 0;
-  border-right: 0.15em solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  @media #{$small-screen} {
-    font-size: 13px;
-  }
+.firstname-letter {
+  font-size: 2.5rem;
+  display: inline-block;
 }
-.css-typing p:nth-child(1) {
-  @media #{$medium-screen} {
-    margin: 20px;
-    width: 9.4em;
-    font-size: 20px;
-  }
-  width: 9.4em;
-  font-size: 30px;
-  opacity: 0;
-  -webkit-animation: type 2s steps(40, end);
-  animation: type 2s steps(40, end);
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.css-typing p:nth-child(2) {
-  @media #{$medium-screen} {
-    margin-left: 20px;
-    width: 9.4em;
-    font-size: 20px;
-  }
-  font-size: 30px;
-  width: 9.7em;
-  opacity: 0;
-  -webkit-animation: type2 2s steps(40, end);
-  animation: type2 2s steps(40, end);
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
+
+// .css-typing {
+//   margin: 60px;
+// }
+// .css-typing p {
+//   padding: 20px 0;
+//   border-right: 0.15em solid white;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   @media #{$small-screen} {
+//     font-size: 13px;
+//   }
+// }
+// .css-typing p:nth-child(1) {
+//   @media #{$medium-screen} {
+//     margin: 20px;
+//     width: 9.4em;
+//     font-size: 20px;
+//   }
+//   width: 9.4em;
+//   font-size: 30px;
+//   opacity: 0;
+//   -webkit-animation: type 2s steps(40, end);
+//   animation: type 2s steps(40, end);
+//   -webkit-animation-delay: 1s;
+//   animation-delay: 1s;
+//   -webkit-animation-fill-mode: forwards;
+//   animation-fill-mode: forwards;
+// }
+// .css-typing p:nth-child(2) {
+//   @media #{$medium-screen} {
+//     margin-left: 20px;
+//     width: 9.4em;
+//     font-size: 20px;
+//   }
+//   font-size: 30px;
+//   width: 9.7em;
+//   opacity: 0;
+//   -webkit-animation: type2 2s steps(40, end);
+//   animation: type2 2s steps(40, end);
+//   -webkit-animation-delay: 3s;
+//   animation-delay: 3s;
+//   -webkit-animation-fill-mode: forwards;
+//   animation-fill-mode: forwards;
+// }
 
 .cv {
   padding: 20px;

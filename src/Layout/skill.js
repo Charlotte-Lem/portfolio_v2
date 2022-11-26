@@ -17,7 +17,7 @@ export default function skill() {
       {/* Start hard and soft skills */}
       <div className="skill__teck">
         {/* start techno front */}
-        <div className=" skills base">
+        <div className=" skills skills-base">
           <h2>Front</h2>
           <img src={css3} alt="logo css3" />
           <img src={html} alt="logo html" />
