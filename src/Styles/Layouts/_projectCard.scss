@@ -1,79 +1,103 @@
-.container__project {
-  display: flex;
-  justify-content: space-around;
-  color: #fff;
-  background-color: #49a2aa;
-  position: relative;
-  font-family: $font-two;
-  transition: all 0.8s ease;
-  padding: 15px 0;
-}
-
-.content {
-  opacity: 0;
-  animation: appear 2s ease forwards;
-  animation-delay: 2s;
-}
-
 .project {
-  font-family: $font-two;
+  position: relative;
+  width: 100%;
+  height: 700px;
   display: flex;
-  flex-direction: row;
-  margin: 0 25px;
-  align-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
   justify-content: center;
-
-  span {
-    font-size: 24px;
+  @media #{$medium-screen} {
+    height: 600px;
   }
-  p {
-    font-size: 22px;
-    color: white;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-  &__card {
-    min-width: 200px;
-    max-width: 600px;
-    max-height: 500px;
-    border: 1px solid #373738;
-    border-radius: 5px;
-    margin: 30px;
-    padding: 7px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  &__content {
+  &__background {
+    padding: 105px 0;
+    margin: 10px 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+    // height: 100%;
+    position: absolute;
+    background: linear-gradient(60deg, #2a595d, #125f69);
+    overflow: hidden;
 
-    .logo {
-      width: 70%;
-      object-fit: cover;
+    &:after {
+      content: "";
+      background: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+      width: 800%;
+      position: absolute;
+      top: -400%;
+      right: -400%;
+      height: 800%;
+      opacity: 0.3;
+      animation-name: rotate;
+      animation-duration: 450s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
     }
-    .booki {
-      margin-left: 30px;
-    }
+  }
+
+  //background-color: rgb(153, 230, 230);
+}
+.slick-slider {
+  z-index: 1;
+}
+.slick-slide > div {
+  margin: 0 20px;
+}
+.slick-list {
+  margin: 50px 250px;
+  @media #{$medium-screen} {
+    margin: 0 10px;
   }
 }
-.title {
-  h2 {
-    text-transform: uppercase;
-    font-family: $font-three;
-    color: white;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    margin: 50px;
+
+.card {
+  background: hwb(0deg 100% 0% / 14%);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px 5px;
+  font-family: $font-three;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  height: 400px;
+  @media #{$medium-screen} {
+    min-height: 400px;
+    max-height: 600px;
   }
+}
+
+.card-top h1 {
+  font-size: 1.2rem;
+  margin: 20px;
+  text-align: center;
+  color: white;
+}
+
+.card-top {
+  margin: 0 auto;
+  &__img {
+    // background-color: rgba(20, 183, 205, 0.338);
+    padding: 10px;
+    height: 15rem;
+    width: 100%;
+    object-fit: scale-down;
+  }
+}
+
+.card-bottom {
+  margin: 10px 20px;
+}
+
+.category {
+  position: relative;
+}
+.category::before {
+  content: "";
+  // background: rgb(225, 222, 222);
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  height: 2px;
 }

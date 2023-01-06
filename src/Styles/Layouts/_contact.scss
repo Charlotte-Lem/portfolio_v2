@@ -4,7 +4,7 @@
   justify-content: center;
   background-color: white;
   position: relative;
-  font-family: $font-two;
+  font-family: $font-one;
   transition: all 0.8s ease;
   padding: 70px 0;
   @media #{$medium-screen} {
@@ -12,6 +12,8 @@
   }
   h1 {
     font-size: 55px;
+    color: black;
+    border-bottom: #51bcdd 2px solid;
     @media #{$medium-screen} {
       font-size: 25px;
       text-align: center;
@@ -57,10 +59,11 @@
     font-size: 18px;
     line-height: 30px;
   }
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font: 25px $font-two;
+  margin-top: 50px;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  font: 25px $font-three;
   color: black;
   h1 {
     font-size: 50px;
@@ -72,6 +75,7 @@
     justify-content: flex-start;
     flex-direction: column;
     color: black;
+    margin-right: 55px;
   }
 
   .info__social {
@@ -96,9 +100,11 @@
   flex-direction: row;
   align-items: center;
   line-height: 80px;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
   :hover {
-    color: #51bcdd;
+    color: $color-ter;
+    transition: all 0.8s ease-in-out;
+
     
   }
   @media #{$medium-screen } {

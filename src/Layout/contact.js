@@ -16,8 +16,9 @@ export default function contact() {
             <div className="par">
               <section className="content-p">
                 <IconContext.Provider value={{ className: "react-icons" }}>
-                  <a className="info__mail" href="mailto:">
-                    <GrMail></GrMail> lemoine.charlottepro@icloud.com
+                  <a className="info__mail" href="mailto:" aria-label="gmail">
+                    <GrMail></GrMail>
+                    {/* lemoine.charlottepro@icloud.com */}
                   </a>
                   {/* <a className="info__phone" href="tel:+">
                     <BsFillPhoneFill></BsFillPhoneFill>
@@ -26,18 +27,18 @@ export default function contact() {
 
                   <ul className="info__social">
                     <li className="Facebook">
-                      <a href="https://www.facebook.com/Charlotte.Lemoine0">
-                        <FaFacebook></FaFacebook> Facebook
+                      <a href="https://www.facebook.com/Charlotte.Lemoine0" aria-label="facebook">
+                        <FaFacebook></FaFacebook>
                       </a>{" "}
                     </li>
                     <li className="Linkedin">
-                      <a href="https://www.linkedin.com/in/charlotte-lem/">
-                        <FaLinkedin></FaLinkedin> Linkedin
+                      <a href="https://www.linkedin.com/in/charlotte-lem/" aria-label="Linkedin">
+                        <FaLinkedin></FaLinkedin>
                       </a>
                     </li>
                     <li className="Github">
-                      <a href="https://github.com/Charlotte-Lem?fbclid=IwAR2vkvvDG99sHLVex9ULml653kpG0Qxyswh83sxzkvmrRkhlSXIP31ijyX4">
-                        <FaGithub></FaGithub> Github
+                      <a href="https://github.com/Charlotte-Lem?fbclid=IwAR2vkvvDG99sHLVex9ULml653kpG0Qxyswh83sxzkvmrRkhlSXIP31ijyX4" aria-label="Github">
+                        <FaGithub></FaGithub>
                       </a>
                     </li>
                   </ul>

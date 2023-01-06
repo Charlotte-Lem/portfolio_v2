@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 25px;
+  font-size: 35px;
   padding: 1rem 2rem;
 background-color: white;
   position: fixed;
@@ -11,7 +11,12 @@ background-color: white;
   border-bottom: 1px solid white;
   transition: all 0.3s ease;
 }
-
+.logo-lcdweb{
+  width: 10vw;
+  @media screen and (max-width: 900px) {
+    width: 20vw;;
+  }
+}
 .navbar-float {
   background-color: white;
   box-shadow: 0 0px 20px rgba(252, 249, 249, 0.2);

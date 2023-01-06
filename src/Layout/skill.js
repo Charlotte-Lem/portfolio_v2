@@ -42,9 +42,13 @@ export default function skill() {
         {/* Start skill ide etc */}
         <div className="skills divers">
           <h2>Divers</h2>
-          <img className="git" src={git} alt="logo git" />
+
+          <img className="git" src={git} alt="logo git" aria-label="Github" />
+
           <img className="vscode" src={vs} alt="logo vscode" />
           <img className="pycharm" src={py} alt="logo py charm" />
+
+          {/* <div className="divers"></div>{" "} */}
         </div>
         {/* End skill ide etc */}
       </div>

@@ -6,7 +6,9 @@ function Home() {
   return (
     <>
       <div className="home" id="Home">
-        <FirstName />
+        <div className="home__background">
+          <FirstName />
+        </div>
       </div>
     </>
   );

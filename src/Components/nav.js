@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-
+import logo from '../Assets/logo/LCDWeb_logo.png'
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 
 const Navigation = () => {
@@ -29,6 +29,7 @@ const Navigation = () => {
 
   return (
     <div className={`app__navbar ${classFloat}`}>
+      <img className="logo-lcdweb" src={logo} alt="|"></img>
       <ul className="app__navbar-links">
         {["Home", "Skills", "Project", "Contact"].map((item) => (
           <li
