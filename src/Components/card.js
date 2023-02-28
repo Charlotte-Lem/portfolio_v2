@@ -1,29 +1,22 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState } from 'react';
 
-import { gsap } from "gsap";
+export default function Card(props) {
+  const { image, title, } = props;
+  const [isHovered, setIsHovered] = useState(false);
 
-function Card() {
-  const [toggle, setToggle] = useState(false);
-
-  const changeState = () => {
-    setToggle(!toggle);
+  const handleHover = () => {
+    setIsHovered(!isHovered);
   };
 
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    gsap.to(cardRef.current, {
-      scale:1.5,
-      rotate: 0,
-      duration: 1.5,
-    });
-  }, []);
-
   return (
-    <div className="card" onClick={changeState} ref={cardRef}>
-      Hello Card
+    <div
+      className={`card-skill${isHovered ? ' card-hover-active' : ''}`}
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHover}
+    >
+      <img src={image} alt={title} />
+      <div className="card-content"></div>
+      <div className="card-hover">{title}</div>
     </div>
   );
 }
-
-export default Card;

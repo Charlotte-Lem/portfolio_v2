@@ -14,16 +14,14 @@ export default function contact() {
               <h1>Contact:</h1>
             </div>
             <div className="par">
+
               <section className="content-p">
                 <IconContext.Provider value={{ className: "react-icons" }}>
-                  <a className="info__mail" href="mailto:" aria-label="gmail">
-                    <GrMail></GrMail>
-                    {/* lemoine.charlottepro@icloud.com */}
+                  <a className="info__mail" href="mailto:" aria-label="mail">
+                    <p> lemoine.charlottepro@icloud.com</p>
+                    {/* <GrMail></GrMail> */}
                   </a>
-                  {/* <a className="info__phone" href="tel:+">
-                    <BsFillPhoneFill></BsFillPhoneFill>
-                    <span className="phone"> 0778218944</span>
-                  </a>  */}
+
 
                   <ul className="info__social">
                     <li className="Facebook">

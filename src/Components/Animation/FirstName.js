@@ -12,8 +12,10 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function FirstName() {
   const titleRef = useRef();
-  let mm = gsap.matchMedia();
-  
+
+  let mm = gsap.matchMedia(),
+    breakPoint = 800;
+
   const onLoad = () => {
     gsap
       .timeline({
@@ -26,74 +28,71 @@ function FirstName() {
         {
           y: -100,
           opacity: 0,
-          fontSize: "5rem",
           margin: "0 0.1vw",
         },
         {
           y: 0,
           opacity: 1,
           stagger: 0.16,
+          duration: 0.6,
           delay: 0.7,
         }
       )
       .fromTo(
         ".firstname-letter",
         {
-          // y: -100,
+          x: -100,
           opacity: 0,
-          fontSize: "50px",
+         
 
         },
         {
-          // y: 0,
-          // x: 30,
+          x: 0,
           opacity: 1,
-          // stagger: 0.13,
           delay: 0.8,
-          duration: 1.5,
+          duration: 0.6,
+          stagger: 0.1,
+          margin: "0 0.1vw",
+          fontWeight: "700",
         }
       )
       .fromTo(
         ".dev-letter1",
         {
-          x: -100,
+          x: 0,
           opacity: 0,
         },
         {
           x: 0,
-          // x: 30,
           opacity: 1,
           stagger: 0.33,
-          // delay: 0.8,
+
         }
       )
       .fromTo(
         ".dev-letter2",
         {
-          x: -100,
+          x: 0,
           opacity: 0,
-          fontWeight: "700",
         },
         {
           x: 0,
-          // x: 30,
           opacity: 1,
-          stagger: 0.13,
-          fontWeight: "700",
+          stagger: 0.33,
+
         }
       )
       .fromTo(
         ".dev-letter3",
         {
-          x: -100,
+          x: 0,
           opacity: 0,
         },
         {
           x: 0,
-          // x: 30,
           opacity: 1,
-          stagger: 0.13,
-          // delay: 0.8,
+          stagger: 0.33,
+
         }
       )
       .to(".letter", {
@@ -102,10 +101,10 @@ function FirstName() {
         duration: 0.5,
       })
       .to(".subtitle", {
-        color: "black",
-        delay: 0.3,
-        duration: 0.9,
-      
+        margin: "1vh 0.5vw",
+        delay: 0.8,
+        duration: 0.5,
+
       });
   };
 
@@ -115,6 +114,7 @@ function FirstName() {
 
   return (
     <>
+
       <div className="home" id="Home">
         <h1 className="title" ref={titleRef}>
           <span className="letter">L</span>

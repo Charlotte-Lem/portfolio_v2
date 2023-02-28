@@ -157,21 +157,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 35px;
+  font-size: 25px;
   padding: 1rem 2rem;
   background-color: white;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   border-bottom: 1px solid white;
   transition: all 0.3s ease;
 }
 
 .logo-lcdweb {
-  width: 10vw;
+  width: 9vw;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1040px) {
   .logo-lcdweb {
-    width: 20vw;
+    width: 25vw;
   }
 }
 
@@ -221,7 +221,7 @@ a {
   transform-origin: 0% 50%;
   transform: scaleX(1);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1040px) {
   .app__navbar-links {
     display: none;
   }
@@ -237,7 +237,7 @@ a {
   height: 35px;
   border-radius: 50%;
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: white;
@@ -298,19 +298,17 @@ a {
 .app__navbar-menu div ul li a:hover {
   color: rgb(18, 87, 108);
 }
-@media screen and (min-width: 900px) {
-  .app__navbar-menu div {
-    display: none;
-  }
-}
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 1040px) {
   .app__navbar-menu {
-    display: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .home {
-  padding: 26rem 0;
+  padding: 31rem 0;
   color: #fff;
   position: relative;
   width: 100%;
@@ -327,13 +325,13 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(60deg, #2a595d, #125f69);
+  background: linear-gradient(60deg, rgba(2, 7, 8, 0.4235294118), #125f69);
   overflow: hidden;
   z-index: -1;
 }
 .home__background:after {
   content: "";
-  background: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+  background: url("https://www.transparenttextures.com/patterns/gravel.png");
   width: 800%;
   position: absolute;
   top: -400%;
@@ -341,14 +339,14 @@ a {
   height: 800%;
   opacity: 0.3;
   animation-name: rotate;
-  animation-duration: 450s;
+  animation-duration: 1050s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
 .title {
   color: white;
-  font-size: 80px;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -367,26 +365,36 @@ a {
   height: 60px;
   font-weight: bold;
   margin: 0 0 25px 0;
+  z-index: 1;
 }
 
 .subtitle {
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 60px;
   font-weight: 700;
-  font-size: 40px;
 }
 
 .letter {
-  font-size: 3rem;
-  display: inline-block;
+  font-size: 5rem;
+}
+@media (max-width: 768px) {
+  .letter {
+    font-size: 3rem;
+  }
 }
 
 .firstname-letter {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   display: inline-block;
+}
+@media (max-width: 768px) {
+  .firstname-letter {
+    font-size: 2rem;
+  }
 }
 
 .cv {
@@ -402,7 +410,7 @@ a {
   -webkit-animation-delay: 6s;
   animation-delay: 6s;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .cv {
     font-size: 18px;
   }
@@ -421,74 +429,61 @@ a {
 }
 .skill {
   padding: 80px 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   background: white;
-  justify-content: center;
-  align-content: center;
 }
-@media screen and (max-width: 1100px) {
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  .container-card .container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
-}
-.skill__teck {
-  text-align: center;
-}
-.skill__soft {
-  flex-basis: 50%;
-}
-.skill img {
-  width: 70px;
-  height: auto;
-  margin: 50px;
-}
-@media screen and (max-width: 1100px) {
-  .skill img {
-    margin: 30px;
-  }
-}
-.skill p {
-  margin-top: 30px;
-  padding: 50px;
-  text-align: center;
-  color: black;
-  font-family: "Special Elite", cursive;
-  letter-spacing: 5px;
-  line-height: 25px;
-  font-size: 24px;
-}
-@media screen and (max-width: 1100px) {
-  .skill p {
-    font-size: 20px;
-  }
-}
-.skill .skills {
-  width: 100%;
-  border: 3px solid rgb(55, 145, 184);
-  margin: 20px;
-}
-@media screen and (max-width: 1100px) {
-  .skill .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 20px;
-  }
-}
-.skill .skills h2 {
-  border-bottom: 3px solid rgb(55, 145, 184);
-  font-size: 30px;
-  color: rgb(23, 85, 177);
-  padding: 30px 0;
 }
 
-.skills-base img,
-.divers img {
-  width: 35px;
+.card-skill {
+  font-family: "Special Elite", cursive;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(228, 227, 227, 0.3019607843);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 250px;
+}
+.card-skill img {
+  display: block;
+  max-width: 50%;
+  max-height: 60%;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center;
+}
+
+.card-hover {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(24, 124, 126, 0.8);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+
+.card-skill:hover .card-hover {
+  display: block;
+  opacity: 1;
 }
 
 .project {
@@ -500,24 +495,23 @@ a {
   box-sizing: border-box;
   justify-content: center;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .project {
     height: 600px;
   }
 }
 .project__background {
   padding: 105px 0;
-  margin: 10px 0;
   top: 0;
   left: 0;
   width: 100%;
   position: absolute;
-  background: linear-gradient(60deg, #2a595d, #125f69);
+  background: linear-gradient(60deg, rgba(2, 7, 8, 0.4235294118), #125f69);
   overflow: hidden;
 }
 .project__background:after {
   content: "";
-  background: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+  background: url("https://www.transparenttextures.com/patterns/gravel.png");
   width: 800%;
   position: absolute;
   top: -400%;
@@ -525,13 +519,13 @@ a {
   height: 800%;
   opacity: 0.3;
   animation-name: rotate;
-  animation-duration: 450s;
+  animation-duration: 1050s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
 .slick-slider {
-  z-index: 1;
+  z-index: 4;
 }
 
 .slick-slide > div {
@@ -541,14 +535,15 @@ a {
 .slick-list {
   margin: 50px 250px;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .slick-list {
     margin: 0 10px;
   }
 }
 
 .card {
-  background: hwb(0deg 100% 0%/14%);
+  width: 80%;
+  background: rgba(255, 255, 255, 0.705);
   border-radius: 8px;
   overflow: hidden;
   padding: 20px 5px;
@@ -558,10 +553,11 @@ a {
   cursor: pointer;
   height: 400px;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .card {
     min-height: 400px;
     max-height: 600px;
+    width: 80%;
   }
 }
 
@@ -569,7 +565,7 @@ a {
   font-size: 1.2rem;
   margin: 20px;
   text-align: center;
-  color: white;
+  color: hsl(0deg, 0%, 0%);
 }
 
 .card-top {
@@ -599,6 +595,11 @@ a {
   height: 2px;
 }
 
+.slick-dots li button:before {
+  color: #e8dbdb;
+  opacity: 1 !important;
+}
+
 .container {
   color: black;
   display: flex;
@@ -607,19 +608,19 @@ a {
   position: relative;
   font-family: "Megrim", cursive;
   transition: all 0.8s ease;
-  padding: 70px 0;
+  padding: 20px 0;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .container {
     flex-direction: column-reverse;
   }
 }
 .container h1 {
-  font-size: 55px;
+  font-size: 35px;
   color: black;
-  border-bottom: #51bcdd 2px solid;
+  border-bottom: #149180 1.5px solid;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .container h1 {
     font-size: 25px;
     text-align: center;
@@ -632,7 +633,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .container_content_inner {
     margin: 10px;
   }
@@ -645,7 +646,7 @@ a {
 .container_img {
   width: 10%;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .container_img {
     width: 50%;
   }
@@ -656,10 +657,10 @@ a {
   font: 25px "Courier New", Courier, monospace;
   color: black;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .par {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .par h1 {
@@ -672,17 +673,17 @@ a {
   justify-content: flex-start;
   flex-direction: column;
   color: black;
-  margin-right: 55px;
 }
 .par .info__social {
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
   margin-left: 2vw;
+  align-items: center;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .par .info__social {
-    display: inline;
+    display: flex;
   }
 }
 .par .react-icons {
@@ -693,6 +694,8 @@ a {
 .content-p {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   line-height: 80px;
   transition: all 1s ease-in-out;
@@ -701,10 +704,10 @@ a {
   color: #149180;
   transition: all 0.8s ease-in-out;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1040px) {
   .content-p {
     line-height: 60px;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
     align-items: center;
   }
